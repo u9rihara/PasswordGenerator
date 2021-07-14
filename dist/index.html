@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>password generator</title>
+</head>
+<body>
+  <h1>password generator</h1>
+  <p>
+    <input type="text" readonly> <button>Regenerate</button>
+  </p>
+  <form>
+    <fieldset>
+      <legend>Settings</legend>
+      <dl>
+        <dt>Length</dt>
+        <dd><input type="number" min="0" max="100" list="length"></dd>
+        <datalist id="length">
+          <option value="8"></option>
+          <option value="12"></option>
+          <option value="15"></option>
+          <option value="16"></option>
+          <option value="20"></option>
+          <option value="32"></option>
+          <option value="50"></option>
+        </datalist>
+      </dl>
+      <dl>
+        <dt>Type</dt>
+        <dd>
+          <ul>
+            <li><label><input type="checkbox">abc...xyz</label></li>
+            <li><label><input type="checkbox">ABC...XYZ</label></li>
+            <li><label><input type="checkbox">012...789</label></li>
+            <li><label><input type="checkbox">-</label></li>
+            <li><label><input type="checkbox">_</label></li>
+            <li><label><input type="checkbox">symbols</label></li>
+          </ul>
+        </dd>
+      </dl>
+    </fieldset>
+  </form>
+</body>
+</html>
